@@ -10,4 +10,15 @@ public class BookSingleton {
         book = null;
         isLoanedOut = false;
     }
+
+    public static BookSingleton borrowBook() {
+        if (!isLoanedOut) {
+            if (book == null) {
+                book = new BookSingleton();
+            }
+            isLoanedOut = true;
+            return book;
+        }
+        return null;
+    }
 }
