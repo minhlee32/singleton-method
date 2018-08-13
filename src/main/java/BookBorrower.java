@@ -12,5 +12,14 @@ public class BookBorrower {
         }
     }
 
+    public String getAuthorAndTitle() {
+        if (haveBook) {
+            return borrowedBook.getAuthorAndTitle();
+        }
+        return "I don't have the book";
+    }
+
+
+
 
 }
