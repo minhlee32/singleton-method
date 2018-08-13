@@ -26,5 +26,15 @@ public class BookSingleton {
         isLoanedOut = false;
     }
 
+    public String getAuthor() {
+        return author;
+    }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthorAndTitle() {
+        return getTitle() + " by " + getAuthor();
+    }
 }
