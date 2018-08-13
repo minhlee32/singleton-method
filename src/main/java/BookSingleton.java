@@ -37,4 +37,5 @@ public class BookSingleton {
     public String getAuthorAndTitle() {
         return getTitle() + " by " + getAuthor();
     }
+
 }
